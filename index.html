@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drużyna WKRÓTCE - Minecraft</title>
+    <style>
+        /* [Poprzednie style pozostają bez zmian do .member-avatar] */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1D1D1D;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #2D2D2D;
+            border: 4px solid #404040;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            color: #55FF55;
+            text-shadow: 2px 2px #000000;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header img {
+            max-width: 400px;
+            width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #AAAAAA;
+        }
+
+        .story-section {
+            background-color: #2D2D2D;
+            border: 4px solid #404040;
+            padding: 30px;
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .story-section h2 {
+            color: #55FF55;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .story-section p {
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .member-card {
+            background-color: #2D2D2D;
+            border: 2px solid #404040;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            border-color: #55FF55;
+        }
+
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border: 3px solid #555555;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .member-name {
+            font-size: 20px;
+            color: #55FF55;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .member-link {
+            display: inline-block;
+            color: #9147ff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 4px;
+            background-color: rgba(145, 71, 255, 0.1);
+        }
+
+        .member-link:hover {
+            color: #b9a3e3;
+            background-color: rgba(145, 71, 255, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2D2D2D;
+            margin-top: 30px;
+            border-top: 4px solid #404040;
+        }
+
+        /* Nowe style dla odtwarzacza audio */
+        .audio-section {
+            background-color: #2D2D2D;
+            border: 4px solid #404040;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .audio-section h3 {
+            color: #55FF55;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #3D3D3D;
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: #55FF55;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.png" alt="WKRÓTCE">
+            <div class="subtitle">Historia pewnej wioski</div>
+        </header>
+
+        <section class="audio-section">
+            <h3>Posłuchaj naszej muzyki</h3>
+            <audio controls>
+                <source src="piosenka.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie wspiera odtwarzacza audio.
+            </audio>
+        </section>
+
+        <section class="story-section">
+            <h2>Nasza Historia</h2>
+            <p>Wszystko zaczęło się od OrzechMC, który położył fundamenty pod to, co dziś nazywamy naszym domem. Dzięki
+                jego przedsiębiorczości i determinacji, nasza wioska otrzymała solidny start i podstawy ekonomiczne,
+                które umożliwiły nam rozwój.</p>
+
+            <p>Szybko dołączył do nas Gimexon, prawdziwy mózg operacji. Jego znajomość każdego przepisu i zdolności
+                organizacyjne sprawiły, że nasza społeczność zaczęła działać jak dobrze naoliwiona maszyna. Wraz z nim
+                pojawiła się NuVikoo, której artystyczna dusza miała tchnąć życie w nasze budowle. Jednak tragiczna
+                strata zwierząt wzbudziła w niej żądzę sprawiedliwości - być może wkrótce usłyszymy odgłosy wojny...</p>
+
+            <p>Wonsaty dołączył do nas ze swoją niezłomną determinacją. Jeśli coś trzeba zrobić, on znajdzie sposób.
+                Nieoczekiwanie pojawił się też Goacikk, który mimo że przybył znikąd, szybko stał się integralną częścią
+                naszej społeczności, udowadniając, że czasem najlepsze rzeczy przychodzą niespodziewanie.</p>
+
+            <p>Ostatnim dodatkiem do naszej ekipy jest Tabaka - weteran Minecrafta, który po długiej przerwie wrócił do
+                gry. Jego luz i nastawienie na dobrą zabawę przypominają nam wszystkim, o co tak naprawdę w tym
+                wszystkim chodzi.</p>
+        </section>
+
+        <section class="team-members">
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/ae47d634-2899-464a-8a26-7a9d0e771a23-profile_image-70x70.png')">
+                </div>
+                <h3 class="member-name">NuVikoo</h3>
+                <a href="https://www.twitch.tv/nuvikoo" class="member-link">Stream</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/3bf7b2ee-4065-46e2-95ac-04ad87b047f3-profile_image-70x70.png')">
+                </div>
+                <h3 class="member-name">Gimexon</h3>
+                <a href="https://www.twitch.tv/gimexon" class="member-link">Stream</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/orzechmc-profile_image-11986175ac173783-70x70.png')">
+                </div>
+                <h3 class="member-name">OrzechMC</h3>
+                <a href="https://www.twitch.tv/OrzechMC" class="member-link">Stream</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/16adb27d-0920-442a-a994-6e729551a065-profile_image-70x70.png')">
+                </div>
+                <h3 class="member-name">Wonsaty</h3>
+                <a href="https://www.twitch.tv/woonsaty" class="member-link">Stream</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/03429910-613d-407e-9eff-d39bb6d20767-profile_image-70x70.png')">
+                </div>
+                <h3 class="member-name">Goacikk</h3>
+                <a href="https://www.twitch.tv/goacikk" class="member-link">Stream</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar"
+                    style="background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/82dab87e-7cb5-443a-befd-04b09ab72c37-profile_image-70x70.png')">
+                </div>
+                <h3 class="member-name">Tabaka</h3>
+                <a href="https://www.twitch.tv/ktl_tabaka" class="member-link">Stream</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
